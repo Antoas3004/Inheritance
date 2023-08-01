@@ -1,0 +1,35 @@
+class maths { // parent class
+	int add(int a, int b) {
+		int add = a + b;
+		System.out.println(add);
+		return add;
+	}
+}
+
+class math extends maths { // child class extends parent class
+	int sub(int c, int d) {
+		int sub = c - d;
+		System.out.println(sub);
+		return sub;
+	}
+}
+
+class mat extends math {    	//again this child class extends it parent class
+	void m() {
+		System.out.println("multilevel inheritance");
+	}
+}
+
+public class Multilevel_Inheritance {
+	
+	//chain of inheritance is called multilevel inheritance
+	// class extends class, again another class extends previous class 
+	// so it class multilevel inheritance
+
+	public static void main(String[] args) {
+		mat a = new mat();
+		a.add(10, 10);
+		a.sub(10, 5);
+		a.m();
+	}
+}
