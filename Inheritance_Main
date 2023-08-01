@@ -1,0 +1,34 @@
+class RBI {			//parent class
+	double balance=5000;
+	double credit( double amount) {
+		balance = balance + amount;
+		System.out.println(balance);
+		return balance;
+	}
+
+	double debit( double amount) {
+		balance = balance - amount;
+		System.out.println(balance);
+		return balance;
+	}
+}
+class SBI extends RBI {   //child class extends parent class property
+	void generatepassbook() {
+		System.out.println("passbook got generated");
+	}
+
+	void printpassbook() {
+		System.out.println("passbook got printed");
+	}
+}
+
+public class Inheritance_Main { 	//main class
+	
+	public static void main(String[] args) {
+		SBI a = new SBI();
+		a.credit(500);
+		//a.debit(400);
+		a.generatepassbook();
+		a.printpassbook();
+	}
+}
