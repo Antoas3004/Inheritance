@@ -1,0 +1,23 @@
+class dog1 { // parent class
+	void Dog() {
+		System.out.println("dog have 4 legs");
+	}
+}
+
+class cat extends dog1 { // child class
+	void Cat() {
+		System.out.println("cat also have 4 legs");
+	}
+}
+
+public class Single_Inheritance {
+
+	// when a class inherite another class is called single inheritance
+	// in this case cat(child class) extends dog1(parent class) properties
+
+	public static void main(String[] args) {
+		cat a = new cat();
+		a.Cat();
+		a.Dog();
+	}
+}
