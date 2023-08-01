@@ -1,0 +1,17 @@
+class dog{
+	void m() {
+		System.out.println("dog eating");
+	}
+}
+
+public class Inheritance_1 extends dog{
+	void n() {
+		System.out.println("dog running also");
+	}
+
+	public static void main(String[] args) {
+		Inheritance_1 A=new Inheritance_1();
+		A.m();
+		A.n();
+	}
+}
