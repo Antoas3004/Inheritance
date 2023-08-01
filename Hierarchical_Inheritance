@@ -1,0 +1,29 @@
+class dog2 {
+	void Dog() {
+		System.out.println("dog barking");
+	}
+}
+
+class cat1 extends dog2 {
+	void Cat() {
+		System.out.println("cat not barking");
+	}
+}
+
+class cow extends dog2 {
+	void Cow() {
+		System.out.println("cow make moo sound");
+	}
+}
+
+public class Hierarchical_Inheritance {
+
+	public static void main(String[] args) {
+		cow a = new cow();
+		a.Cow();
+		a.Dog();
+		cat1 b = new cat1();
+		b.Cat();
+		b.Dog();
+	}
+}
